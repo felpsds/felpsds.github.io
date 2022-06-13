@@ -1,0 +1,159 @@
+*{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+h1{
+    display: block;
+    text-align: center;
+    color: #ff780c;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'berlin-sans-fb-demi-bold', sans-serif;
+}
+body{
+    background-color:rgb(202, 228, 241);    
+}
+.sprite{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.return{
+    display: block;
+    position:absolute;
+    top: 0%;
+    left: 95%;
+    margin: 2px;
+    transition: transform .7s ease-in-out;
+    
+}
+.return:hover{
+    transform: rotate(-180deg);
+}
+#container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.keyboard {
+    transition: bottom 0.4s;
+}
+.keyboard--hidden {
+    bottom: -100%;
+}
+.keyboard__keys {
+    text-align: center;
+}
+.keyboard__key {
+    height: 40px;
+    width: 40px;
+    max-width: 90px;
+    margin: 3px;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 1.05rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+}
+.keyboard__key:active {
+    background: #fff;
+}
+.keyboard__key--wide {
+    width: 12%;
+}
+.keyboard__key--extra-wide {
+    width: 36%;
+    max-width: 500px;
+}
+.keyboard__key--activatable::after {
+    content: '';
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+.keyboard__key--active::after {
+    background: #fff;
+}
+.keyboard__key--dark {
+    background: #fff;
+}
+li{
+    list-style: none;
+    display: inline;
+}
+
+@media only screen and (max-width: 1920px) {
+    .sprite{
+        display: block;
+        margin: auto;
+        padding-left: 3%;
+        max-width: 18%;
+        max-height: 18%;
+    }
+    .return{
+        display: block;
+        position:absolute;
+        top: 0%;
+        left: 97%;
+        margin: auto;
+        margin-top: 8px;
+        transition: transform .7s ease-in-out;
+        max-height: 4%;
+    }
+    .return:hover{
+        transform: rotate(-180deg);
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .sprite{
+        display: block;
+        margin: auto;
+        padding-left: 9%;
+        max-width: 50%;
+        max-height: 50%;
+    }
+    .return{
+        display: block;
+        position:absolute;
+        top: 0%;
+        left: 96%;
+        margin: 3px;
+        transition: transform .7s ease-in-out;
+        max-width: 20%;
+    }
+    .return:hover{
+        transform: rotate(-180deg);
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .sprite{
+        display: block;
+        margin: auto;
+        padding-left: 16%;
+        max-width: 60%;
+        max-height: 60%;
+    }
+    .return{
+        display: block;
+        position:absolute;
+        top: 0%;;
+        left: 91%;
+        margin: 3px;
+        transition: transform .7s ease-in-out;
+        max-width: 8%;
+    }
+    .return:hover{
+        transform: rotate(-180deg);
+    }
+}
+
