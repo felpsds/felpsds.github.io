@@ -151,13 +151,27 @@ const Keyboard = {
 window.addEventListener("DOMContentLoaded", function () {
     Keyboard.init();
 });
+var imgs = 0;
+function run(contain){
+    if(imgs < 5){
+        if(contain == -1){
+            img = imgs++;
+            console.log("Esta letra errada!!");
+            spriteimg = document.querySelector("img").src = "../Img/Sprites/"+imgs+".png";
 
+        }else{
+            console.log("Esta certa!!");
+        }
+    }else{
+        document.querySelector("img").src = "../Img/Sprites/6.png";
+        document.querySelector("img").style.maxWidth = "30%";
+        document.querySelector("h1").innerHTML = "Você perdeu";
+        document.getElementById("container").style.display = "none";
+        document.querySelector(`[class="keyboard"]`).style.display = "none";
+    }
+}
 function verify(key){
     const size = item.length;
     var contain = item.indexOf(key);
-    if(contain == -1){
-        console.log("Esta letra errada!!")
-    }else{
-        console.log("Esta certa!!")
-    }
+    run(contain);
 }
