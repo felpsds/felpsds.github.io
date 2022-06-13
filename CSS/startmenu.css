@@ -86,6 +86,7 @@ body{
     .exit, .start{
         display: block;
         margin: auto;
+        min-width: 100%;
         max-width: 45%;
         max-height: 45%;
     }
