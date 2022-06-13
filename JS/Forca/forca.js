@@ -164,7 +164,6 @@ function run(contain){
         }
     }else{
         document.querySelector("img").src = "../Img/Sprites/6.png";
-        document.querySelector("img").style.maxWidth = "30%";
         document.querySelector("h1").innerHTML = "Você perdeu";
         document.getElementById("container").style.display = "none";
         document.querySelector(`[class="keyboard"]`).style.display = "none";
