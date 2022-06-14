@@ -34,12 +34,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-.keyboard {
-    transition: bottom 0.4s;
-}
-.keyboard--hidden {
-    bottom: -100%;
-}
 .keyboard__keys {
     text-align: center;
 }
@@ -166,5 +160,15 @@ h1.resp
     .return:hover{
         transform: rotate(-180deg);
     }
+    .keyboard__key {
+        height: 38px;
+        width: 38px;
+        margin: 1px;
+        border-radius: 6px;
+        background: #fff;
+        font-size: 1.05rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
 }
-
