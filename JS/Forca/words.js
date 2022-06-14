@@ -1,3 +1,14 @@
+function random(){
+    item = word_list[Math.floor(Math.random()*word_list.length)].toUpperCase();
+    var container = document.getElementById('container');
+    var size = item.length;
+    var container = document.getElementById('words');
+    for(var i = 0; i < size; i++){
+        container.innerHTML+='<li class='+ i + '> _ </li>'
+    }
+    return item;
+};
+
 var word_list = [
     'Afobado',
     'Amarelo',
@@ -48,18 +59,65 @@ var word_list = [
     'Coelho',
     'Trilogia',
     'Impacto',
-    'Xicara'
+    'Xicara',
+    'Otorrinolaringologista',
+    'Grampeador',
+    'Capataz',
+    'Cego',
+    'Arremesso',
+    'Natural',
+    'Embaixador',
+    'Enteada',
+    'Caravelas',
+    'Carpinteiro',
+    'Remendar',
+    'Monitor',
+    'Veredito',
+    'Artificial',
+    'Engrenagem',
+    'Escritores',
+    'Impressora',
+    'Realizando',
+    'Girino',
+    'Beterraba',
+    'Febre',
+    'Pesquisa',
+    'Vibrar',
+    'Decapitar',
+    'Eleito',
+    'Sobrancelhas',
+    'Havai',
+    'Progenitor',
+    'Toldo',
+    'Giz',
+    'Lula',
+    'Avisos',
+    'Febre',
+    'Refletor',
+    'Tigre'
+    'Gravidez'
+    'Louco',
+    'Canoa',
+    'Descongelar',
+    'Pulga',
+    'Erosão',
+    'Converter',
+    'Rotas',
+    'Pintar',
+    'Elefante',
+    'Ler',
+    'Audiofone',
+    'Internacional'
+    'Enteada',
+    'Gigante',
+    'Pais',
+    'Panda',
+    'Esgotos',
+    'Rolo',
+    'Tristeza',
+    'Catalunha'
 ]; 
     
-function random(){
-    item = word_list[Math.floor(Math.random()*word_list.length)].toUpperCase();
-    var container = document.getElementById('container');
-    var size = item.length;
-    var container = document.getElementById('words');
-    for(var i = 0; i < size; i++){
-        container.innerHTML+='<li class='+ i + '> _ </li>'
-    }
-    return item;
-};
+
 
     
