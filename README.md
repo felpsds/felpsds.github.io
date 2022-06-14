@@ -10,7 +10,7 @@ Se baixar o arquivo abra o arquivo HTML/startmenu.html, ele irá abrir o menu do
 Nesse projeto foram usados: HTML CSS JavaScript
 
 Se você tem alguma dica ou que fazer contato, me manda uma DM no instagram.com/felpsds! Se divirta ;)
-
+---------------------------------------------------------------------------------------------------------------------------
 This is a repository It's a project that I'm still working...
 
 Im switching my game made in python, to a Web, with new functions, styles... Actualy some implementations are pending, like check the letter in word and changer them in front, but I belive that the visual part are 90% made!
