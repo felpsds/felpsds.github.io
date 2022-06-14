@@ -49,7 +49,7 @@ const Keyboard = {
         const keyLayout = [
             "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P",
             "A", "S", "D", "F", "G", "H", "J", "K", "L",
-            "backspace", "Z", "X", "C", "V", "B", "N", "M", "enter"
+            "Z", "X", "C", "V", "B", "N", "M"
         ];
 
         // Creates HTML for an icon
@@ -116,13 +116,11 @@ const Keyboard = {
 
         return fragment;
     },
-
     _triggerEvent(handlerName) {
         if (typeof this.eventHandlers[handlerName] == "function") {
             this.eventHandlers[handlerName](this.properties.value);
         }
     },
-
     _toggleCapsLock() {
         this.properties.capsLock = !this.properties.capsLock;
 
@@ -132,7 +130,6 @@ const Keyboard = {
             }
         }
     },
-
     open(initialValue, oninput, onclose) {
         this.properties.value = initialValue || "";
         this.eventHandlers.oninput = oninput;
@@ -147,23 +144,31 @@ const Keyboard = {
         this.elements.main.classList.add("keyboard--hidden");
     }
 };
-
 window.addEventListener("DOMContentLoaded", function () {
     Keyboard.init();
 });
+var guessed = 0
 var imgs = 0;
-function run(contain){
+function run(contain,key,indexes){
     if(imgs < 5){
         if(contain == -1){
             img = imgs++;
-            console.log("Esta letra errada!!");
             spriteimg = document.querySelector("img").src = "../Img/Sprites/"+imgs+".png";
-
         }else{
-            console.log("Esta certa!!");
+            for(var j = 0; j < indexes.length;j++){
+                document.querySelector('[class="' + indexes[j]+'"]').innerHTML = key; 
+            }
+            guessed = indexes.length + guessed;
+            if(guessed == item.length)
+            {
+                document.querySelector("img").src = "../Img/Sprites/Feliz.png";
+                document.querySelector("h1").innerHTML = "VOCÊ GANHOU";
+                document.getElementById("container").style.display = "none";
+                document.querySelector(`[class="keyboard"]`).style.display = "none";
+            }
         }
     }else{
-        document.querySelector("img").src = "../Img/Sprites/6.png";
+        document.querySelector("img").src = "../Img/Sprites/Final.png";
         document.querySelector("h1").innerHTML = "Você perdeu";
         document.getElementById("container").style.display = "none";
         document.querySelector(`[class="keyboard"]`).style.display = "none";
@@ -171,6 +176,7 @@ function run(contain){
 }
 function verify(key){
     const size = item.length;
+    const indexes = [...item.matchAll(new RegExp(key, 'gi'))].map(a => a.index);
     var contain = item.indexOf(key);
-    run(contain);
+    run(contain,key,indexes);
 }
