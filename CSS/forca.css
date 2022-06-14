@@ -91,7 +91,15 @@ li{
 ul{
     padding: 0;
 }
-
+h1.resp
+{
+    size: 20px;
+    display: none;
+    display: block;
+    text-align: center;
+    color: #ff780c;
+    font-family: 'berlin-sans-fb-demi-bold', sans-serif;
+}
 @media only screen and (max-width: 1920px) {
     .sprite{
         display: block;
@@ -159,3 +167,4 @@ ul{
         transform: rotate(-180deg);
     }
 }
+
