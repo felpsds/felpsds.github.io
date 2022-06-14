@@ -88,6 +88,9 @@ li{
     list-style: none;
     display: inline;
 }
+ul{
+    padding: 0;
+}
 
 @media only screen and (max-width: 1920px) {
     .sprite{
@@ -156,4 +159,3 @@ li{
         transform: rotate(-180deg);
     }
 }
-
