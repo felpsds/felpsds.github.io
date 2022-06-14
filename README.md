@@ -24,3 +24,4 @@ In this project I used: HTML CSS JavaScript
 If you have any tips or want to make contact, send me DM in instagram.com/felpsds!
 
 HF ;)
+---------------------------------------------------------------------------------------------------------------------------
