@@ -55,14 +55,9 @@ function random(){
     item = word_list[Math.floor(Math.random()*word_list.length)].toUpperCase();
     var container = document.getElementById('container');
     var size = item.length;
-
     var container = document.getElementById('words');
-
     for(var i = 0; i < size; i++){
-        container.innerHTML+='<li> _ </li>'
+        container.innerHTML+='<li class='+ i + '> _ </li>'
     }
-    console.log(item)
     return item;
 };
-
-    
