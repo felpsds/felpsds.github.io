@@ -94,8 +94,8 @@ var word_list = [
     'Avisos',
     'Febre',
     'Refletor',
-    'Tigre'
-    'Gravidez'
+    'Tigre',
+    'Gravidez',
     'Louco',
     'Canoa',
     'Descongelar',
@@ -107,7 +107,7 @@ var word_list = [
     'Elefante',
     'Ler',
     'Audiofone',
-    'Internacional'
+    'Internacional',
     'Enteada',
     'Gigante',
     'Pais',
