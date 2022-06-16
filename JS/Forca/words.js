@@ -105,7 +105,9 @@ var word_list = [
     'Esgotos',
     'Rolo',
     'Tristeza',
-    'Catalunha'
+    'Catalunha',
+    'Palavra',
+    'Nadine'
 ]; 
 function random(){
     item = word_list[Math.floor(Math.random()*word_list.length)].toUpperCase();
