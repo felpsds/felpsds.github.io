@@ -90,7 +90,7 @@ var word_list = [
     'Canoa',
     'Descongelar',
     'Pulga',
-    'Erosão',
+    'Erosao',
     'Converter',
     'Rotas',
     'Pintar',
