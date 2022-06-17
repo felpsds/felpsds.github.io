@@ -11,7 +11,7 @@
     <script src="../JS/menu.js"></script>
 </head>
 
-<body>
+<body onload="checkCookie">
     <input type="image" class="logo" src="../Img/Logo.png" onclick="alert('Créditos: \n• Artes visuais: @viniiid\n• Criacao e dev.: @felpsds ')">
 
     <input type="image" class="start" src="../Img/Play.png" onclick="window.location.replace('../HTML/games.html')">
@@ -32,7 +32,7 @@
             <div>
                 <div class="cal-center ca-buttons">
                     <button id="btn-cookie-option" onclick="saveCookies(true, true)">Aceitar</button>
-                    <button id="btn-cookie-accept" onclick="saveCookies(true)">Negar</button>
+                    <button id="btn-cookie-accept" onclick="saveCookies(false)">Negar</button>
                 </div>
             </div>
         </div>
