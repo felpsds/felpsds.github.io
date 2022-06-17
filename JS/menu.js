@@ -1,7 +1,7 @@
 function saveCookies(option){
     document.getElementById("lgpd_cookie").style.display = "none";
     
-    if(option = true){
+    if(option == true){
         document.cookie = "cookieAllow= " + option + ";" + ";path=/";
     }
 }
