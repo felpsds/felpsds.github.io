@@ -14,6 +14,19 @@ body{
     max-height: 100%;
 }
 
+#lgpd_cookie{
+    display: grid;
+    top: 90%;
+    box-shadow: rgba(0, 0, 0, 0.30) 13px -20px 50px -10px;
+    background-color: #fff;
+    width: 90%;
+    border-radius: 20px;
+    margin: 0.5%;
+}
+.ccm-cookie-icon, .cal-center, .ca-text, .ccm-banner-buttons{
+    padding: 0.75%;
+}
+
 @media only screen and (max-width: 1920px) {
     .logo{
         display: block;
@@ -51,43 +64,39 @@ body{
         display: block;
         margin: auto;
         max-width: 60%;
-        max-height: 60%;
     }
     .exit, .start{
         display: block;
         margin: auto;
         max-width: 30%;
-        max-height: 30%;
+    }
+    .logo:hover{
+        min-width: 59%;
+    }
+    .exit:hover,.start:hover{
+        min-width: 29%;
     }
 }
 
-@media only screen and (max-width: 730px) {
-    .logo{
-        display: block;
-        margin: auto;
-        max-width: 70%;
-        max-height: 70%;
-    }
-    .exit, .start{
-        display: block;
-        margin: auto;
-        max-width: 30%;
-        max-height: 30%;
-    }
-}
 
 @media only screen and (max-width: 500px) {
     .logo{
         display: block;
         margin: auto;
         max-width: 100%;
-        max-height: 100%;
     }
     .exit, .start{
         display: block;
         margin: auto;
-        min-width: 45%;
         max-width: 45%;
-        max-height: 45%;
+    }
+    .logo:hover{
+        min-width: 99%;
+    }
+    .exit:hover,.start:hover{
+        min-width: 44%;
+    }
+    .ccm-cookie-icon, .cal-center, .ca-text, .ccm-banner-buttons{
+        padding: 1%;
     }
 }
