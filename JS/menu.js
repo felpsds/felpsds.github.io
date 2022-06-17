@@ -3,7 +3,6 @@ function saveCookies(option){
     
     if(option = true){
         document.cookie = "cookieAllow= " + option + ";" + ";path=/";
-        alert(document.cookie)
     }
 }
 function checkCookie(){
