@@ -10,6 +10,8 @@ Se baixar o arquivo abra o arquivo HTML/startmenu.html, ele irá abrir o menu do
 Nesse projeto foram usados: HTML CSS JavaScript
 
 Se você tem alguma dica ou que fazer contato, me manda uma DM no instagram.com/felpsds! Se divirta ;)
+
+### Hangman by Felpsds
 ---------------------------------------------------------------------------------------------------------------------------
 This is a repository It's a project that I'm still working...
 
@@ -24,5 +26,5 @@ In this project I used: HTML CSS JavaScript
 If you have any tips or want to make contact, send me DM in instagram.com/felpsds!
 
 HF ;)
-### Hangman by Felpsds
+
 ---------------------------------------------------------------------------------------------------------------------------
