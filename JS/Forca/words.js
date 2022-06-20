@@ -1,4 +1,5 @@
 function random(){
+    var lang = getCookie("lang");
     console.log(lang)
     switch (lang) {
         case 'pt_br':
