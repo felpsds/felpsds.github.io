@@ -1,3 +1,4 @@
+import {getCookie} from '../Forca/words';
 const Keyboard = {
 
     elements: {
