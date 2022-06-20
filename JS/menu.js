@@ -51,10 +51,16 @@ function getLang(lang){
     switch(lang){
         case 'pt_br':
             document.cookie = "lang= " + lang + ";" + ";path=/";  
+            console.log("pt");
+            break;
         case 'en':
             document.cookie = "lang= " + lang + ";" + ";path=/";
+            console.log("en");
+            break;
         default:
-        document.cookie = "lang= " + "pt_br" + ";" + ";path=/";
+            document.cookie = "lang= " + "pt_br" + ";" + ";path=/";
+            console.log("df");
+            break;
     }
 }
     

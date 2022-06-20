@@ -1,5 +1,7 @@
 body{
     background-color:rgb(202, 228, 241);
+    margin: 0;
+    padding: 0;
 }
 .logo{
     display: block;
@@ -32,6 +34,9 @@ body {
 }
 .ccm-cookie-icon, .cal-center, .ca-text, .ccm-banner-buttons{
     padding: 0.75%;
+}
+input.exit{
+    margin-bottom: 0;
 }
 
 @media only screen and (max-width: 1920px) {
@@ -121,7 +126,7 @@ a.hidden{
     color: #546e7a;
     font-size: 15px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 20px;
 }
 
 .custom-sel a:hover {
@@ -154,20 +159,32 @@ a.hidden{
 }
 
 .custom-sel {
-    margin: 30px;
-    display: inline-block;
     display: block;
     position: relative;
     top: 80%;
     left: 2%;
-    margin: 2px;
+    margin: 0;
     transition: transform .7s ease-in-out;
 }
 .container{
+    max-width: 25%;
+    margin: 2px;
     cursor: pointer;
     user-select:none;
 }
 #rotate{
     transition: transform .1s ease-in-out;
     transform: rotate(-90deg);
+}
+
+.overlaylgpd{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+a.selected{
+    padding: 0;
+    margin: 0;
 }
