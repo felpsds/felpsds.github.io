@@ -6,6 +6,7 @@ function random(){
         break;
         case 'en':
             item = word_list_en[Math.floor(Math.random()*word_list_en.length)].toUpperCase();
+            document.querySelector("h1").innerHTML = "Hangman"
         break;
     }
     
