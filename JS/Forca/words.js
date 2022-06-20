@@ -34,7 +34,6 @@ function getCookie(cname) {
     }
     return "";
 }
-
 var word_list_ptbr = [
     'Afobado',
     'Amarelo',
