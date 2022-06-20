@@ -110,6 +110,25 @@ input.exit{
     .ccm-cookie-icon, .cal-center, .ca-text, .ccm-banner-buttons{
         padding: 1%;
     }
+    .custom-sel a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    font-family: Raleway;
+    color: #546e7a;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 20px;
+}
+    .container{
+    max-width: 100%;
+    margin: 2px;
+    cursor: pointer;
+    user-select:none;
+}
+    
 }
 
 a.hidden{
