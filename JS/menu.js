@@ -10,6 +10,8 @@ function checkCookie(){
     let user = getCookie("cookieAlert");
     if(user != ""){
         document.getElementById("lgpd_cookie").style.display = "none";
+    } else {
+        console.log(true)
     }
 }
 
