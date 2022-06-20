@@ -55,7 +55,7 @@ function getLang(lang){
             break;
         case 'en':
             document.cookie = "lang= " + lang + ";" + ";path=/";
-            cdocument.querySelector("a.selected").innerHTML = "Language"
+            document.querySelector("a.selected").innerHTML = "Language"
             break;
         default:
             document.cookie = "lang= " + "pt_br" + ";" + ";path=/";
