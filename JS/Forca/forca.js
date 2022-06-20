@@ -93,10 +93,10 @@ function run(contain,key,indexes){
                 document.querySelector("img").src = "../Img/Sprites/Feliz.png";
                 if(lang == "pt_br"){
                     document.querySelector("h1").innerHTML = "VOCÊ GANHOU";
-                    document.querySelector("p").innerHTML = "A palavra era: "+ item;
+                    document.querySelector("h1.resp").innerHTML = "A palavra era: "+ item;
                 }else{
                     document.querySelector("h1").innerHTML = "YOU WIN!!";
-                    document.querySelector("p").innerHTML = "The word was: "+ item;
+                    document.querySelector("h1.resp").innerHTML = "The word was: "+ item;
                 }
                 
                 document.getElementById("container").style.display = "none";
@@ -109,10 +109,10 @@ function run(contain,key,indexes){
 
         if(lang == "pt_br"){
             document.querySelector("h1").innerHTML = "VOCÊ PERDEU";
-            document.querySelector("p").innerHTML = "A palavra era: "+ item;
+            document.querySelector("h1.resp").innerHTML = "A palavra era: "+ item;
         }else{
             document.querySelector("h1").innerHTML = "YOU LOSE!!";
-            document.querySelector("p").innerHTML = "The word was: "+ item;
+            document.querySelector("h1.resp").innerHTML = "The word was: "+ item;
         }
 
         document.querySelector("img").src = "../Img/Sprites/Final.png";
