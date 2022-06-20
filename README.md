@@ -1,4 +1,4 @@
-### Jogo da velha by Felpsds
+### Jogo da Forca by Felpsds
 ---------------------------------------------------------------------------------------------------------------------------
 Esse é o repositório de um projeto em andamento...
 
