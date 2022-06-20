@@ -1,5 +1,5 @@
 ### Jogo da velha by Felpsds
-
+---------------------------------------------------------------------------------------------------------------------------
 Esse é o repositório de um projeto em andamento...
 
 Estou transformando meu jogo feito em python, para o formato web, como novas funcionalidades, etilizações e etc. Atualmente falta algumas implementações a serem feitas, como a verificação de letra na palavra e a subistituição dela no front, mas acredito que a parte visual está 90% feita!
@@ -9,8 +9,9 @@ Se baixar o arquivo abra o arquivo HTML/startmenu.html, ele irá abrir o menu do
 Nesse projeto foram usados: HTML CSS JavaScript
 
 Se você tem alguma dica ou que fazer contato, me manda uma DM no instagram.com/felpsds! Se divirta ;)
----------------------------------------------------------------------------------------------------------------------------
+
 ### Hangman by Felpsds
+---------------------------------------------------------------------------------------------------------------------------
 
 This is a repository It's a project that I'm still working...
 
