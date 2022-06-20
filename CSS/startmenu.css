@@ -167,7 +167,7 @@ a.hidden{
     transition: transform .7s ease-in-out;
 }
 .container{
-    max-width: 25%;
+    max-width: 50%;
     margin: 2px;
     cursor: pointer;
     user-select:none;
