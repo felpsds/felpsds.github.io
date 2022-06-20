@@ -52,10 +52,13 @@ function getLang(lang){
         case 'pt_br':
             document.cookie = "lang= " + lang + ";" + ";path=/";  
             document.querySelector("a.selected").innerHTML = 'Linguagem &nbsp;<i class="fa fa-caret-down lightblue" aria-hidden="true"></i>'
+            document.querySelector("input.start").src = "../Img/Play1.png"
+            document.querySelector("input.start").src = "../Img/Exit.png"
             break;
         case 'en':
             document.cookie = "lang= " + lang + ";" + ";path=/";
             document.querySelector("a.selected").innerHTML = 'Language &nbsp;<i class="fa fa-caret-down lightblue" aria-hidden="true"></i>'
+            document.querySelector("input.start").src = "../Img/Quit.png"
             break;
         default:
             document.cookie = "lang= " + "pt_br" + ";" + ";path=/";
