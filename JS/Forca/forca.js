@@ -76,7 +76,7 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 var guessed = 0;
 var imgs = 0;
-var lang = getCookie("lang");
+lang = getCookie("lang");
 function run(contain,key,indexes){
     if(imgs < 5){
         if(contain == -1){
