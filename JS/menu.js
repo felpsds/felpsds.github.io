@@ -9,10 +9,10 @@ function saveCookies(option){
 function checkCookie(){
     user = getCookie("cookieAlert");
     lang = getCookie("lang");
-    if(user != ""){
+    if(user != ''){
         document.getElementById("lgpd_cookie").style.display = "none";
     }
-    if(lang == ""){
+    if(lang == ''){
         document.cookie = "lang= " + "pt_br" + ";" + ";path=/";
     }
 }
@@ -51,7 +51,6 @@ function langmenu(){
     
 }
 function getLang(lang){
-    
     switch(lang){
         case 'pt_br':
             document.cookie = "lang= " + lang + ";" + ";path=/";  
