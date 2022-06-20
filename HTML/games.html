@@ -7,11 +7,21 @@
         <link rel="stylesheet" href="../CSS/games.css">
         <title>Simple Games</title>
         <link rel="icon" type="image/png" href="../icons/favicon.png"/>
+        <script src="../JS/lang.js"></script>
     </head>
 
     <body>
         <input type="image" class="return" src="../Img/return.png" onclick="window.location.replace('../HTML/startmenu.html')">
-        
+        <form>
+            <label for="lang-switch">
+                <span lang="en">Language</span>
+            </label>
+            <select id="lang-switch">
+                <option value="pt_br" onclick="Keyboard.init()" selected>Português</option>
+                <option value="en" onclick="Keyboard.init()">English</option>
+            </select>
+        </form>
+
         <input type="image" class="forca" src="../Img/Forcabtt.png" onclick="window.location.replace('../HTML/forca.html')">
 
     </body>

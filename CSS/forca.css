@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+
 *{
     font-family: 'Merriweather Sans', sans-serif;
 }
@@ -85,15 +88,9 @@ li{
 ul{
     padding: 0;
 }
-h1.resp
-{
-    size: 20px;
-    display: none;
-    display: block;
-    text-align: center;
-    color: #ff780c;
-    font-family: 'berlin-sans-fb-demi-bold', sans-serif;
-}
+
+
+
 @media only screen and (max-width: 1920px) {
     .sprite{
         display: block;
@@ -137,6 +134,13 @@ h1.resp
     .return:hover{
         transform: rotate(-180deg);
     }
+    form.lang{
+        display: block;
+        position:absolute;
+        top: 0%;
+        right: 80%;
+        margin: 2px;
+    }
     
 }
 
@@ -161,8 +165,8 @@ h1.resp
         transform: rotate(-180deg);
     }
     .keyboard__key {
-        height: 50px;
-        width: 35px;
+        height: 38px;
+        width: 38px;
         margin: 1px;
         border-radius: 6px;
         background: #fff;
@@ -171,4 +175,12 @@ h1.resp
         justify-content: center;
         padding: 0;
     }
+    form.lang{
+        display: block;
+        position:absolute;
+        top: 0%;
+        right: 70%;
+        margin: 2px;
+    }
 }
+

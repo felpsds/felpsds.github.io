@@ -11,7 +11,7 @@ const Keyboard = {
     properties: {
         value: "",
     },
-    init() {
+    init(){
         var item = random();
         this.elements.main = document.createElement("div");
         this.elements.keysContainer = document.createElement("div");
@@ -92,8 +92,8 @@ function run(contain,key,indexes){
                 document.querySelector("h1").innerHTML = "VOCÊ GANHOU";
                 document.getElementById("container").style.display = "none";
                 document.querySelector(`[class="keyboard"]`).style.display = "none";
-                document.querySelector("h1.resp").innerHTML = "A palavra era: "+ item;
-                document.querySelector("h1.resp").style.display = "grid";
+                document.querySelector("p").innerHTML = "A palavra era: "+ item;
+                document.querySelector("p").style.display = "grid";
             }
         }
     }else{

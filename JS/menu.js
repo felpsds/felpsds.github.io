@@ -1,15 +1,13 @@
 function saveCookies(option){
     document.getElementById("lgpd_cookie").style.display = "none";
-    
     if(option == true){
-        document.cookie = "cookieAllow= " + option + ";" + ";path=/";
+        document.cookie = "cookieAlert= " + option + ";" + ";path=/";
     } else {
-        console.log(option + " definida")
+        console.log("Not Confirmed!")
     }
-    
 }
 function checkCookie(){
-    let user = getCookie("cookieAllow");
+    let user = getCookie("cookieAlert");
     if(user != ""){
         document.getElementById("lgpd_cookie").style.display = "none";
     }
@@ -30,3 +28,34 @@ function getCookie(cname) {
     }
     return "";
 }
+
+function langmenu(){
+    hidden = document.querySelectorAll("a.hidden");
+    if(hidden.length == 0){
+        open = document.querySelectorAll("a.open");
+        for (i = 0; i < open.length; i++ ){
+            document.querySelector("a.open").setAttribute("class", "hidden" );
+            document.querySelector("i.fa").setAttribute("id", "" );
+        }
+    } else {
+        for (i = 0; i < hidden.length; i++ ){
+            document.querySelector("a.hidden").setAttribute("class", "open" );
+            document.querySelector("i.fa").setAttribute("id", "rotate" );
+        }
+    }
+    
+    
+}
+function getLang(lang){
+    
+    switch(lang){
+        case 'pt_br':
+            document.cookie = "lang= " + lang + ";" + ";path=/";  
+        case 'en':
+            document.cookie = "lang= " + lang + ";" + ";path=/";
+        default:
+        document.cookie = "lang= " + "pt_br" + ";" + ";path=/";
+    }
+}
+    
+    
