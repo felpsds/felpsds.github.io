@@ -1,4 +1,4 @@
-# felpsds.github.io
+### Jogo da velha by Felpsds
 
 Web-Game
 Esse é o repositório de um projeto em andamento...
@@ -24,4 +24,5 @@ In this project I used: HTML CSS JavaScript
 If you have any tips or want to make contact, send me DM in instagram.com/felpsds!
 
 HF ;)
+### Hangman by Felpsds
 ---------------------------------------------------------------------------------------------------------------------------
