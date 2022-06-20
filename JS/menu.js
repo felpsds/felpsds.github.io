@@ -8,7 +8,7 @@ function saveCookies(option){
 }
 function checkCookie(){
     user = getCookie("cookieAlert");
-    if(user == true){
+    if(user != ""){
         document.getElementById("lgpd_cookie").style.display = "none";
     }
 }
