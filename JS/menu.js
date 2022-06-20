@@ -51,11 +51,11 @@ function getLang(lang){
     switch(lang){
         case 'pt_br':
             document.cookie = "lang= " + lang + ";" + ";path=/";  
-            document.querySelector("a.selected").innerText = 'Linguagem &nbsp;<i class="fa fa-caret-down lightblue" aria-hidden="true"></i>'
+            document.querySelector("a.selected").innerHTML = 'Linguagem &nbsp;<i class="fa fa-caret-down lightblue" aria-hidden="true"></i>'
             break;
         case 'en':
             document.cookie = "lang= " + lang + ";" + ";path=/";
-            document.querySelector("a.selected").innerText = 'Language &nbsp;<i class="fa fa-caret-down lightblue" aria-hidden="true"></i>'
+            document.querySelector("a.selected").innerHTML = 'Language &nbsp;<i class="fa fa-caret-down lightblue" aria-hidden="true"></i>'
             break;
         default:
             document.cookie = "lang= " + "pt_br" + ";" + ";path=/";
