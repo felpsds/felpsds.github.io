@@ -1,6 +1,5 @@
 function random(){
     var lang = getCookie("lang");
-    console.log(lang)
     switch (lang) {
         case 'pt_br':
             item = word_list_ptbr[Math.floor(Math.random()*word_list_ptbr.length)].toUpperCase();
@@ -18,6 +17,22 @@ function random(){
     }
     return item;
 };
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+}
 
 var word_list_ptbr = [
     'Afobado',
