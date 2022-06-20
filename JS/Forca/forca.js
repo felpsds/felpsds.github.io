@@ -76,6 +76,7 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 var guessed = 0;
 var imgs = 0;
+var lang = getCookie("lang");
 function run(contain,key,indexes){
     if(imgs < 5){
         if(contain == -1){
@@ -88,20 +89,35 @@ function run(contain,key,indexes){
             guessed = indexes.length + guessed;
             if(guessed == item.length)
             {
+                
                 document.querySelector("img").src = "../Img/Sprites/Feliz.png";
-                document.querySelector("h1").innerHTML = "VOCÊ GANHOU";
+                if(lang == "pt_br"){
+                    document.querySelector("h1").innerHTML = "VOCÊ GANHOU";
+                    document.querySelector("p").innerHTML = "A palavra era: "+ item;
+                }else{
+                    document.querySelector("h1").innerHTML = "YOU WIN!!";
+                    document.querySelector("p").innerHTML = "The word was: "+ item;
+                }
+                
                 document.getElementById("container").style.display = "none";
                 document.querySelector(`[class="keyboard"]`).style.display = "none";
-                document.querySelector("p").innerHTML = "A palavra era: "+ item;
+                
                 document.querySelector("p").style.display = "grid";
             }
         }
     }else{
+
+        if(lang == "pt_br"){
+            document.querySelector("h1").innerHTML = "VOCÊ PERDEU";
+            document.querySelector("p").innerHTML = "A palavra era: "+ item;
+        }else{
+            document.querySelector("h1").innerHTML = "YOU LOSE!!";
+            document.querySelector("p").innerHTML = "The word was: "+ item;
+        }
+
         document.querySelector("img").src = "../Img/Sprites/Final.png";
-        document.querySelector("h1").innerHTML = "Você perdeu";
         document.getElementById("container").style.display = "none";
         document.querySelector(`[class="keyboard"]`).style.display = "none";
-        document.querySelector("h1.resp").innerHTML = "A palavra era: "+ item;
         document.querySelector("h1.resp").style.display = "grid"
     }
 }
