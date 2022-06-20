@@ -8,8 +8,12 @@ function saveCookies(option){
 }
 function checkCookie(){
     user = getCookie("cookieAlert");
+    lang = getCookie("lang");
     if(user != ""){
         document.getElementById("lgpd_cookie").style.display = "none";
+    }
+    if(lang == ""){
+        document.cookie = "lang= " + "pt_br" + ";" + ";path=/";
     }
 }
 
