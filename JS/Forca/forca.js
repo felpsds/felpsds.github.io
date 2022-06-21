@@ -78,8 +78,7 @@ var guessed = 0;
 var imgs = 0;
 lang = getCookie("lang");
 function run(contain,key,indexes){
-    if(imgs < 6){
-        if(contain == -1){
+    if(contain == -1){
             img = imgs++;
             spriteimg = document.querySelector("img").src = "../Img/Sprites/"+imgs+".png";
         }else{
@@ -87,6 +86,8 @@ function run(contain,key,indexes){
                 document.querySelector('[class="' + indexes[j]+'"]').innerHTML = key; 
             }
             guessed = indexes.length + guessed;
+    }
+    if(imgs < 6){
             if(guessed == item.length)
             {
                 
@@ -104,7 +105,6 @@ function run(contain,key,indexes){
                 
                 document.querySelector("p").style.display = "grid";
             }
-        }
     }else{
 
         if(lang == "pt_br"){
