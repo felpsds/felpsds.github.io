@@ -114,7 +114,7 @@ function run(contain,key,indexes){
             document.querySelector("h1").innerHTML = "YOU LOSE!!";
             document.querySelector("h1.resp").innerHTML = "The word was: "+ item;
         }
-
+        document.querySelector("img").src = "../Img/Sprites/6.png"
         document.querySelector("img").src = "../Img/Sprites/Final.png";
         document.getElementById("container").style.display = "none";
         document.querySelector(`[class="keyboard"]`).style.display = "none";
