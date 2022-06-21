@@ -103,7 +103,7 @@ function run(contain,key,indexes){
                 document.getElementById("container").style.display = "none";
                 document.querySelector(`[class="keyboard"]`).style.display = "none";
                 
-                document.querySelector("p").style.display = "grid";
+                document.querySelector("h1.resp").style.display = "grid";
             }
     }else{
 
