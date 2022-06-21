@@ -78,7 +78,7 @@ var guessed = 0;
 var imgs = 0;
 lang = getCookie("lang");
 function run(contain,key,indexes){
-    if(imgs < 5){
+    if(imgs < 4){
         if(contain == -1){
             img = imgs++;
             spriteimg = document.querySelector("img").src = "../Img/Sprites/"+imgs+".png";
