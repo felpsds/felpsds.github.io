@@ -76,7 +76,7 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 var guessed = 0;
 var imgs = 0;
-lang = "pt_br";
+lang = getCookie("lang");
 function run(contain,key,indexes){
     if(contain == -1){
             img = imgs++;
