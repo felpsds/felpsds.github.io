@@ -100,7 +100,7 @@ function run(contain,key,indexes){
                     document.getElementById("lose").style.display = "block";
                 }
                 break;
-            case 'us':
+            case 'en':
                 document.getElementById("resp").innerHTML = "The word was: " + item;
                 if(guessed == item.length){
                     document.getElementById("win").style.display = "block";
