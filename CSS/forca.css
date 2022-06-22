@@ -89,7 +89,37 @@ ul{
     padding: 0;
 }
 
+#gameOver{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0, 0.8);
+    color: white;
+    font-size: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+}
+#win, #lose, #resp{
+    display: none;
+}
+#resp{
+    font-size: 15px;
+}
 
+#restart{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #ff780c;
+    border: none;
+    border-radius: 30px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
 
 @media only screen and (max-width: 1920px) {
     .sprite{
