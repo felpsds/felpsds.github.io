@@ -76,7 +76,7 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 var guessed = 0;
 var imgs = 0;
-lang = getCookie("lang");
+lang = "pt_br";
 function run(contain,key,indexes){
     if(contain == -1){
             img = imgs++;
@@ -87,46 +87,41 @@ function run(contain,key,indexes){
             }
             guessed = indexes.length + guessed;
     }
-    if(imgs < 6){
-            if(guessed == item.length)
-            {
-                
-                document.querySelector("img").src = "../Img/Sprites/Feliz.png";
-                if(lang == "pt_br"){
-                    document.querySelector("h1").innerHTML = "VOCÊ GANHOU";
-                    document.querySelector("h1.resp").innerHTML = "A palavra era: "+ item;
-                }else{
-                    document.querySelector("h1").innerHTML = "YOU WIN!!";
-                    document.querySelector("h1.resp").innerHTML = "The word was: "+ item;
-                }
-                
-                document.getElementById("container").style.display = "none";
-                document.querySelector(`[class="keyboard"]`).style.display = "none";
-                
-                document.querySelector("h1.resp").style.display = "grid";
-            }
-    }else{
 
-        if(lang == "pt_br"){
-            document.querySelector("h1").innerHTML = "VOCÊ PERDEU";
-            document.querySelector("h1.resp").innerHTML = "A palavra era: "+ item;
-        }else{
-            document.querySelector("h1").innerHTML = "YOU LOSE!!";
-            document.querySelector("h1.resp").innerHTML = "The word was: "+ item;
+    if(guessed == item.length || imgs > 5){
+        document.getElementById("gameOver").style.display = "flex";
+        document.getElementById("resp").style.display = "block";
+        switch(lang){
+            case 'pt_br':
+                document.getElementById("resp").innerHTML = "A palavra era: " + item;
+                if(guessed == item.length){
+                    document.getElementById("win").style.display = "block";
+                }else{
+                    document.getElementById("lose").style.display = "block";
+                }
+                break;
+            case 'us':
+                document.getElementById("resp").innerHTML = "The word was: " + item;
+                if(guessed == item.length){
+                    document.getElementById("win").style.display = "block";
+                    document.getElementById("win").style.innerHTML = "YOU WIN!!";
+
+                }else{
+                    document.getElementById("lose").style.display = "block";
+                    document.getElementById("win").style.innerHTML = "YOU LOSE!!";
+                }
+                break;
         }
-        document.querySelector("img").src = "../Img/Sprites/6.png"
-        document.querySelector("img").src = "../Img/Sprites/Final.png";
-        document.getElementById("container").style.display = "none";
-        document.querySelector(`[class="keyboard"]`).style.display = "none";
-        document.querySelector("h1.resp").style.display = "grid"
     }
 }
+
 function verify(key){
     const size = item.length;
     const indexes = [...item.matchAll(new RegExp(key, 'gi'))].map(a => a.index);
     var contain = item.indexOf(key);
     run(contain,key,indexes);
 };
+
 function getCookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
@@ -141,4 +136,7 @@ function getCookie(cname) {
       }
     }
     return "";
+}
+function restart(){
+    location.reload();
 }

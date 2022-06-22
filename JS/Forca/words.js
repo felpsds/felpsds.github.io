@@ -1,5 +1,5 @@
 function random(){
-    var lang = getCookie("lang");
+    var lang = "pt_br"
     switch (lang) {
         case 'pt_br':
             item = word_list_ptbr[Math.floor(Math.random()*word_list_ptbr.length)].toUpperCase();
@@ -86,7 +86,6 @@ var word_list_ptbr = [
     'Impacto',
     'Xicara'
 ]; 
-
 var word_list_en = [
     'abandon',
     'ability',
