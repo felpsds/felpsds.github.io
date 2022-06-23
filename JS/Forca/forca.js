@@ -87,10 +87,6 @@ function run(contain,key,indexes){
             }
             guessed = indexes.length + guessed;
     }
-    if(lang == 'en'){
-        document.querySelector("h1").innerHTML = "Hangman";
-    }
-
     if(guessed == item.length || imgs > 5){
         document.getElementById("gameOver").style.display = "flex";
         document.getElementById("resp").style.display = "block";
