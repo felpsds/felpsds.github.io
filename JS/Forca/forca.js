@@ -102,7 +102,7 @@ function run(contain,key,indexes){
                 }else{
                     document.getElementById("lose").style.display = "block";
                 }
-                break;
+            break;
             case 'en':
                 document.getElementById("resp").innerHTML = "The word was: " + item;
                 if(guessed == item.length){
@@ -113,7 +113,7 @@ function run(contain,key,indexes){
                     document.getElementById("lose").style.display = "block";
                     document.getElementById("win").style.innerHTML = "YOU LOSE!!";
                 }
-                break;
+            break;
         }
     }
 }
