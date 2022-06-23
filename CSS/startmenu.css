@@ -142,7 +142,7 @@ a.hidden{
     padding: 10px;
     text-align: left;
     font-family: Raleway;
-    color: #546e7a;
+    color: #ff780c;
     font-size: 15px;
     font-weight: 700;
     line-height: 20px;
@@ -150,8 +150,7 @@ a.hidden{
 
 .custom-sel a:hover {
     text-decoration: none;
-    background-color: #EDF0F2;
-    color: #ffffff;
+    color: #03a9f4;
 }
 
 .custom-sel a.selected {
