@@ -107,11 +107,11 @@ function run(contain,key,indexes){
                 document.getElementById("resp").innerHTML = "The word was: " + item;
                 if(guessed == item.length){
                     document.getElementById("win").style.display = "block";
-                    document.getElementById("win").style.innerHTML = "YOU WIN!!";
+                    document.getElementById("win").innerHTML = "YOU WIN!!";
 
                 }else{
                     document.getElementById("lose").style.display = "block";
-                    document.getElementById("win").style.innerHTML = "YOU LOSE!!";
+                    document.getElementById("lose").innerHTML = "YOU LOSE!!";
                 }
             break;
         }
