@@ -1,5 +1,5 @@
 function random(){
-    var lang = "pt_br"
+    lang = getCookie("lang");
     switch (lang) {
         case 'pt_br':
             item = word_list_ptbr[Math.floor(Math.random()*word_list_ptbr.length)].toUpperCase();
