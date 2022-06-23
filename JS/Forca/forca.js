@@ -105,6 +105,8 @@ function run(contain,key,indexes){
             break;
             case 'en':
                 document.getElementById("resp").innerHTML = "The word was: " + item;
+                document.querySelector("div#restart").innerHTML = "Play Again"
+                
                 if(guessed == item.length){
                     document.getElementById("win").style.display = "block";
                     document.getElementById("win").innerHTML = "YOU WIN!!";
