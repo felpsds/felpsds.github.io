@@ -160,6 +160,7 @@ a.hidden{
 
 .custom-sel a.selected:hover {
     background-color: transparent;
+    color: #ff780c;
 }
 
 .hidden {
