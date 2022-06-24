@@ -95,6 +95,7 @@ function run(contain,key,indexes){
                 document.getElementById("resp").innerHTML = "A palavra era: " + item;
                 if(guessed == item.length){
                     document.getElementById("win").style.display = "block";
+                    document.querySelector("img").src = "../Img/Sprites/Feliz.png";
                 }else{
                     document.getElementById("lose").style.display = "block";
                 }
@@ -106,7 +107,7 @@ function run(contain,key,indexes){
                 if(guessed == item.length){
                     document.getElementById("win").style.display = "block";
                     document.getElementById("win").innerHTML = "YOU WIN!!";
-
+                    document.querySelector("img").src = "../Img/Sprites/Feliz.png";
                 }else{
                     document.getElementById("lose").style.display = "block";
                     document.getElementById("lose").innerHTML = "YOU LOSE!!";
