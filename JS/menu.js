@@ -38,6 +38,7 @@ function langmenu(){
     if(hidden.length == 0){
         open = document.querySelectorAll("a.open");
         for (i = 0; i < open.length; i++ ){
+            document.querySelector("a.selected").style.color = "#03a9f4"
             document.querySelector("a.open").setAttribute("class", "hidden" );
             document.querySelector("i.fa").setAttribute("id", "" );
         }
