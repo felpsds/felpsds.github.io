@@ -37,13 +37,13 @@ function langmenu(){
     hidden = document.querySelectorAll("a.hidden");
     if(hidden.length == 0){
         open = document.querySelectorAll("a.open");
-        document.querySelector("a.selected").style.color = "#03a9f4"
+        document.querySelector("a.selected").style.color = "#ff780c"
         for (i = 0; i < open.length; i++ ){
             document.querySelector("a.open").setAttribute("class", "hidden" );
             document.querySelector("i.fa").setAttribute("id", "" );
         }
     } else {
-        document.querySelector("a.selected").style.color = "#ff780c"
+        document.querySelector("a.selected").style.color = "#03a9f4"
         for (i = 0; i < hidden.length; i++ ){
             document.querySelector("a.hidden").setAttribute("class", "open" );
             document.querySelector("i.fa").setAttribute("id", "rotate" );
