@@ -43,7 +43,7 @@ function langmenu(){
             document.querySelector("i.fa").setAttribute("id", "" );
         }
     } else {
-        document.querySelector("a.selected").style.color = "#03a9f4"
+        document.querySelector("a.selected").style.color = "#ff780c"
         for (i = 0; i < hidden.length; i++ ){
             document.querySelector("a.hidden").setAttribute("class", "open" );
             document.querySelector("i.fa").setAttribute("id", "rotate" );
