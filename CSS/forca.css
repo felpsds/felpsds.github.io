@@ -178,25 +178,25 @@ ul{
     .sprite{
         display: block;
         margin: auto;
-        padding-left: 16%;
-        max-width: 60%;
-        max-height: 60%;
+        padding-left: 15%;
+        max-width: 59%;
+        max-height: 59%;
     }
     .return{
         display: block;
         position:absolute;
         top: 0%;;
-        left: 91%;
-        margin: 3px;
+        left: 90%;
+        margin: 2px;
         transition: transform .7s ease-in-out;
-        max-width: 8%;
+        max-width: 7%;
     }
     .return:hover{
         transform: rotate(-180deg);
     }
     .keyboard__key {
-        height: 38px;
-        width: 38px;
+        height: 37px;
+        width: 37px;
         margin: 1px;
         border-radius: 6px;
         background: #fff;
