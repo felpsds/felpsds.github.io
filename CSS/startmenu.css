@@ -159,6 +159,7 @@ a.hidden{
 
 .custom-sel a.selected:hover {
     background-color: transparent;
+    transition: all 0.25s ease;
     color: #03a9f4;
 }
 
@@ -168,6 +169,7 @@ a.hidden{
 
 .lightblue {
     color:#03a9f4;
+    transition: all 0.25s ease;
     margin-left: -4px;
 }
 
