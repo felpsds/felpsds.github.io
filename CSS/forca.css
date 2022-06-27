@@ -212,5 +212,8 @@ ul{
         right: 70%;
         margin: 2px;
     }
+    #win, #lose{
+        font-size: 45px;
+    }
 }
 
