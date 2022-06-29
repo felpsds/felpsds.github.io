@@ -80,7 +80,7 @@ lang = getCookie("lang");
 function run(contain,key,indexes){
     if(contain == -1){
             img = imgs++;
-            spriteimg = document.querySelector("img").src = "../sg/Img/Sprites/"+imgs+".png";
+            spriteimg = document.querySelector("img").src = "../Img/Sprites/"+imgs+".png";
         }else{
             for(var j = 0; j < indexes.length;j++){
                 document.querySelector('[class="' + indexes[j]+'"]').innerHTML = key; 
