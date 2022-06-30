@@ -32,7 +32,6 @@ body{
 }
 
 #menu-area{
-    z-index: 999;
     top: 0;
     position: fixed;
     min-width: 100%;
@@ -43,7 +42,7 @@ body{
     font-weight: 400;
     border-bottom: 2px solid rgba(255, 255, 255, 0.6);
     box-shadow: 0px 2.5px 6px rgba(255, 255, 255, 0.5);
-    
+    z-index: 9999;
 }
 #menu-area li{
     margin-right: 2%;
@@ -117,16 +116,21 @@ aside{
     max-width: 1080px;
     margin-top: 10%;
     margin-bottom: 10%;
-    cursor:none;
 
 }
 #aboutme{
-    background-color: black;
-    max-width: 40%;
+    max-width: 100%;
     min-height: 100%;
     justify-content: left;
     border-radius: 35px;
 }
+#abouttxt{
+    text-align: center;
+}
+
+
+
+/*project*/
 #sc,#wf{
     display: flex;
     justify-content: end;
@@ -165,7 +169,6 @@ img#wf{
 a{
     color:white;
     text-decoration: none;
-    cursor:pointer;
 }
 a:hover li{
     color:gray;
@@ -220,7 +223,7 @@ a:hover li{
 }
 #hovertm:hover .wftxt{
     display: flex;
-    transition: 3s;
+    transition: 1s;
     opacity: 1;
 }
 
@@ -232,3 +235,4 @@ a:hover li{
     text-align: center;
     opacity: 0;
 }
+
