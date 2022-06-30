@@ -163,6 +163,7 @@ img#wf{
 a{
     color:white;
     text-decoration: none;
+    cursor:pointer;
 }
 a:hover li{
     color:gray;
