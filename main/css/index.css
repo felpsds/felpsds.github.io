@@ -32,6 +32,7 @@ body{
 }
 
 #menu-area{
+    z-index: 999;
     top: 0;
     position: fixed;
     min-width: 100%;
