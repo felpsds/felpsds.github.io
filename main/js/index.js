@@ -12,7 +12,7 @@ function nighton(){
     document.getElementById("sec3").style.backgroundColor = "#2f3136"
     document.getElementById("sec4").style.backgroundColor = "#2f3136"
 
-    document.getElementById("themeimg").src ="../MyProject/main/Icones/lightmode.png";
+    document.getElementById("themeimg").src ="../main/Icones/lightmode.png";
     document.querySelector("#hovertm.sgbox").style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0.80) 50%)";
     document.querySelector("#hovertm.scbox").style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0.80) 50%)";
     document.querySelector("#hovertm.wfbox").style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0.80) 50%)";
@@ -36,7 +36,7 @@ function nightoff(){
     document.getElementById("sec3").style.backgroundColor = "#F5F5F5"
     document.getElementById("sec4").style.backgroundColor = "#F5F5F5"
 
-    document.getElementById("themeimg").src ="../MyProject/main/Icones/darkmode.png";
+    document.getElementById("themeimg").src ="../main/Icones/darkmode.png";
     document.querySelector("#hovertm.sgbox").style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%,rgba(255, 255, 255, 0.90) 50%)";
     document.querySelector("#hovertm.scbox").style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%,rgba(255, 255, 255, 0.90) 50%)";
     document.querySelector("#hovertm.wfbox").style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%,rgba(255, 255, 255, 0.90) 50%)";
