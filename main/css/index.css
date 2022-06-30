@@ -160,23 +160,70 @@ img#wf{
     height: 100%;
     width: 50%;
 }
-
-img#sc:hover{
-    border-bottom-left-radius: 33px;
-    height: 100%;
-    width: 50%;
-}
-img#wf:hover{
-    border-bottom-right-radius: 33px;
-    height: 100%;
-    width: 50%;
-}
 a{
     color:white;
     text-decoration: none;
 }
-a:hover{
+a:hover li{
     color:gray;
-    cursor:pointer;
 }
 
+#hovertm.sgbox{
+    width: 100%;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
+}
+#hovertm.scbox,#hovertm.wfbox{
+    display: grid;
+}
+#hovertm.scbox{
+    max-width: 540px;
+    width: 50%;
+    border-bottom-left-radius: 33px;
+}
+#hovertm.wfbox{
+    left: 50%;
+    max-width: 540px;
+    width: 50%;
+    border-bottom-right-radius: 33px;
+}
+
+#hovertm{
+    max-width: 1080px;
+    max-height: 377px;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0.80) 50%);
+}
+#hovertm:hover{
+    display: block;
+    cursor: pointer;
+    background-position: 0 -100%;
+    transition: 850ms;
+}
+#hovertm:hover .sgtxt{
+    display: flex;
+    transition: 3s;
+    opacity: 1;
+}
+#hovertm:hover .sctxt{
+    display: flex;
+    transition: 3s;
+    opacity: 1;
+}
+#hovertm:hover .wftxt{
+    display: flex;
+    transition: 3s;
+    opacity: 1;
+}
+
+.sgtxt, .sctxt,.wftxt{
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+}
