@@ -5,6 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../main/css/index.css">
+    <link rel="stylesheet" href="../MyProject/main/css/recursive.css">
     <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
     <script src="../main/js/index.js"></script>
 </head>
@@ -30,11 +31,11 @@
     </nav>
     <aside>   
         <div id="sec1">
-            <div style="font-size: 60px;">Seja bem vindo!</div>
-            <div div="name" style="font-size: 25px;"> 
+            <div class="titulo">Seja bem vindo!</div>
+            <div div="name" class="texto" 
                 Meu nome é Felipe e sou um desenvolvedor júnior!
             </div>     
-            <div style="font-size: 25px;">
+            <div class="texto">
                 Aqui você pode conhecer melhor
                 <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -46,9 +47,9 @@
             <div id="box1">
                 <div id="hovertm" class="sgbox" onclick='window.open("../sg/sg.html")'>
                     <div class="sgtxt">
-                        <div style="font-size: 60px;">Simple Games</div>
+                        <div class="titulo">Simple Games</div>
                         <br>
-                        <div div="name" style="font-size: 25px;"> 
+                        <div div="name" class="texto"> 
                             Um jogo da forca feito em python e portado para Web...
                             <br>
                             <br>
@@ -61,9 +62,9 @@
             <div id="box2">
                 <div id="hovertm" class="scbox" onclick='window.open("https://github.com/felpsds/Changer-by-FelpsDS", "_blank");'>
                     <div class="sctxt">
-                        <div style="font-size: 60px;">SkinChanger</div>
+                        <div class="titulo">SkinChanger</div>
                         <br>
-                        <div div="name" style="font-size: 25px;"> 
+                        <div div="name" class="texto">
                             Um programa feito em C++, ele lê a memória e altera as propiedades do jogo e sento totalmente personalizavel!!
                             <br>
                             <br>
@@ -74,9 +75,9 @@
                 <img id="sc" src="../main/Icones/sc.png" >
                 <div id="hovertm" class="wfbox" onclick='window.open("https://github.com/felpsds/Flooder", "_blank");'>
                     <div class="wftxt">
-                        <div style="font-size: 60px;">WhatsApp Flooder</div>
+                        <div class="titulo">WhatsApp Flooder</div>
                         <br>
-                        <div div="name" style="font-size: 25px;"> 
+                        <div div="name" class="texto">
                             Uma extensão de navegador! Envia uma quantidade de vezes a mesma mensagem!
                             <br>
                             <br>
@@ -91,10 +92,10 @@
         <div id="sec3">
             <div id="aboutme" style="padding:4%">
                 <div id="abouttxt">
-                    <div style="font-size: 60px;">Desenvolvedor JR. Front-End</div>
+                    <div class="titulo">Desenvolvedor JR. Front-End</div>
                 </div>
                 <br><br>
-                <div div="name" style="font-size: 25px;"> 
+                <div div="name" class="texto"> 
                     Nome: Felipe dos Santos<br>
                     Idade: 19 anos<br>
                     Local: Santa Catarina - Brasil<br>
@@ -116,31 +117,32 @@
             </div>
         </div>
         <div class="head" id="contact"> Contatos </div>
-        <div id="sec4">
-            <div style="font-size: 60px;">Você pode me chamar aqui:</div>
-            <div div="name" style="font-size: 25px;"> 
-                Meu e-mail: felpsds@hotmail.com
-                <br>
-                Redes Sociais
-                <br>
-                <ul>
-                    <li>
-                        <a onclick='window.open("https://www.instagram.com/felpsds", "_blank");'>Instragram</a>
-                    </li>
-                    <li>
-                        <a onclick='window.open("https://www.linkedin.com/in/felipe-dos-santos-424789210", "_blank");'>LinkedIn</a>
-                    </li>
-                    <li>
-                        <a onclick='window.open("https://github.com/felpsds/", "_blank");'>GitHub</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="name" style="font-size: 25px;">              
-                <div div="name" style="text-align: center;font-size: 25px;"> 
-                    Obrigado por visitar!
+            <div id="sec4">
+                <div class="titulo">Você pode me chamar aqui:</div>
+                <div div="name" style="text-align: none;"class="texto"> 
+                    Meu e-mail: felpsds@hotmail.com
+                    <br>
+                    Redes Sociais
+                    <br>
+                    <ul>
+                        <li>
+                            <a onclick='window.open("https://www.instagram.com/felpsds", "_blank");'>Instragram</a>
+                        </li>
+                        <li>
+                            <a onclick='window.open("https://www.linkedin.com/in/felipe-dos-santos-424789210", "_blank");'>LinkedIn</a>
+                        </li>
+                        <li>
+                            <a onclick='window.open("https://github.com/felpsds/", "_blank");'>GitHub</a>
+                        </li>
+                    </ul>
                 </div>
-                <div div="name" style="text-align: center;font-size: 25px;"> 
-                    Qualquer coisa estou à disposição!!
+                <div id="name" class="texto">
+                    <div div="name" style="text-align: center;"class="texto"> 
+                        Obrigado por visitar!
+                    </div>
+                    <div div="name" style="text-align: center;"class="texto"> 
+                        Qualquer coisa estou à disposição!!
+                    </div>
                 </div>
             </div>
         </div>
