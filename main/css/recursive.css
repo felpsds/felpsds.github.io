@@ -31,6 +31,8 @@
         padding-top: 20%
     }
     #sec1, #sec2, #sec3, #sec4{
+        min-height: 600px;
+        max-height: 650px;
         min-width: 0;
         width: 90%;
     }
