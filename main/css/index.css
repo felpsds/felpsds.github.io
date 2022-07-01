@@ -235,7 +235,6 @@ a:hover li{
     transition: 1s;
     opacity: 1;
 }
-
 .sgtxt, .sctxt,.wftxt{
     height: 100%;
     flex-direction: column;
@@ -244,4 +243,9 @@ a:hover li{
     text-align: center;
     opacity: 0;
 }
-
+.titulo{
+    font-size: 60px;
+}
+.texto{
+    font-size: 25px;
+}
