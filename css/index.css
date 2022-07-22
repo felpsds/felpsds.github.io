@@ -7,6 +7,7 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
 }
 header{
+    z-index: 101;
     width: 100vw;
     z-index: 101;
     position: fixed;
@@ -35,6 +36,9 @@ header{
     border-bottom:  2px solid #b380ff;
     color: #b380ff;
 }
+.mobile{
+    display: none;
+}
 .downcv{
     height: 3em;
     width: 5em;
@@ -58,7 +62,7 @@ footer{
     color: #ffffff;
     padding: 0.75em;
 }
-footer h2 {
+footer p {
     display: flex;
     justify-content: center;
     margin: 0;

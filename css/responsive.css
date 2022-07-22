@@ -1,0 +1,84 @@
+@media only screen and (max-width: 708px) {
+    header{
+        width: 95vw;
+    }
+    footer p{
+        max-height: 10vh;
+    }
+    .menu{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile{
+        display: flex;
+        justify-content: center;
+    }
+    .mobile button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 7vw;
+        height: 3.5vh;
+        background-color: transparent;
+        border: none;
+    }
+    .box-shadow-menu .b2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #6600ff;
+        left: 0;
+        top: 1rem;
+        width: 1.5rem;
+        height: 0.2rem;
+        transition: 0.5s;
+    }
+    .box-shadow-menu .b1{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        top: -0.25rem;
+        width: 1.5rem;
+        height: 0.25rem;
+        background: #6600ff;
+        z-index: 99;
+        transition: 0.5s;
+        
+    }
+    .box-shadow-menu .b3{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        top: 0.25rem;
+        width: 1.5rem;
+        height: 0.25rem;
+        background: #6600ff;
+        z-index: 102;
+        transition: 0.5s;
+        
+    }
+    .btnslist ul{
+        display: none;
+    }
+    button:focus .box-shadow-menu .b2{
+        opacity: 0;
+    }
+    button:focus .box-shadow-menu .b1{
+        top: 0.50rem;
+        transform: rotate(45deg);
+        transition: 0.5s;
+    }
+    button:focus .box-shadow-menu .b3{
+        top: 0rem;
+        transform: rotate(-45deg);
+        transition: 0.5s;
+    }
+    
+    
+}

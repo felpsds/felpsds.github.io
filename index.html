@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -20,18 +21,35 @@
             
         </div>
         <div class="menu" style="cursor: pointer;">
-            <ul>
-                <li class="menubtn" onclick="window.scrollTo(0, 0);">Home</li>
-                <li class="menubtn">Sobre</li>
-                <li class="menubtn">Habilidades</li>
-                <li class="menubtn">Portifólio</li>
-                <li class="menubtn" onClick="document.getElementById('contatos').scrollIntoView();">Contato</li>
-                <li>
-                    <button class="downcv">
-                        <a href="/files/resumeFelipeSantos.pdf" download="Felipe's resume">Currículo</a>
+            <div class="btnslist">
+                <div class="mobile">
+                    <button focused>
+                        <div class="box-shadow-menu">
+                            <div class="b1"></div>
+                            <div class="b2"></div>
+                            <div class="b3"></div>
+
+                        </div>
                     </button>
-                </li>
-            </ul>
+                    
+                </div>
+                <ul>
+                    <li class="menubtn" onclick="window.scrollTo(0, 0);">Home</li>
+                    <li class="menubtn">Sobre</li>
+                    <li class="menubtn">Habilidades</li>
+                    <li class="menubtn">Portifólio</li>
+                    <li class="menubtn" onclick="document.getElementById('contatos').scrollIntoView();">Contato</li>
+                    <li>
+                        <button class="downcv">
+                            <a href="/files/resumeFelipeSantos.pdf" download="Felipe's resume">Currículo</a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            
+            
+           
+
         </div>
     </header>
     <main>
@@ -45,10 +63,10 @@
             
         </div>
     </main>
-    <footer id="contatos">
-        <h2>
+    <footer>
+        <p id="contatos">
             Contatos:
-        </h2>
+        </p>
         <div class="icons">
             <a href="mailto:felpsds@hotmail.com" title="E-mail"><i class="fa-solid fa-envelope fa-xl"></i></a>
             <a href="https://www.github.com/felpsds/" target="_blank" title="GitHub"><i class="fa-brands fa-github fa-xl"></i></a>
