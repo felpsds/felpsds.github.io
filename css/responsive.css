@@ -2,6 +2,10 @@
     header{
         width: 95vw;
     }
+    footer{
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+    }
     footer p{
         max-height: 10vh;
     }
