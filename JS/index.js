@@ -12,9 +12,8 @@ async function animation(){
         size = frases[j].length;
         console.log(size);
         for(let i = 0; i < size; i++){
-            second = Math.floor(Math.random() * 120) + 70;
+            second = Math.floor(Math.random() * 120) + 60;
             await sleep(second);
-            console.log(second);
             letras = letras + frase[i];
             local.innerHTML = letras;
         }
