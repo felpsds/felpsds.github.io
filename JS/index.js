@@ -10,9 +10,8 @@ async function animation(){
         local = document.querySelector(".p"+j);
         frase = frases[j];
         size = frases[j].length;
-        console.log(size);
         for(let i = 0; i < size; i++){
-            second = Math.floor(Math.random() * 120) + 60;
+            second = Math.floor(Math.random() * 121) + 60;
             await sleep(second);
             letras = letras + frase[i];
             local.innerHTML = letras;
