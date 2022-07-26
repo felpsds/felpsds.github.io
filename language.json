@@ -1,0 +1,28 @@
+{
+    "pt_br": {
+      "header": {
+        "1" : "Home",
+        "2": "Sobre",
+        "3": "Habilidade",
+        "4": "Portifólio",
+        "5": "Contato",
+        "6": "Currículo"
+      },
+      "footer":{
+        "title": "Contatos"
+      }
+    },
+    "en": {
+        "header": {
+          "1" : "Home",
+          "2": "About",
+          "3": "Skills",
+          "4": "Portfolio",
+          "5": "Contact Me",
+          "6": "Resume"
+        },
+        "footer":{
+          "title": "Contact Me"
+        }
+      }
+  }

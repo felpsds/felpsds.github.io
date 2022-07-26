@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="/JS/index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <title>FelipeDS</title>
 </head>
-<body>
+<body onload="animation();">
     <header>
         <div class="logo" style="cursor: pointer;">
             <b>
-                FelipeDS
+            &lt;/FelsDS&gt;
             </b>
             
         </div>
         <div class="menu" style="cursor: pointer;">
             <div class="btnslist">
                 <div class="mobile">
-                    <button focused>
+                    <button>
                         <div class="box-shadow-menu">
                             <div class="b1"></div>
                             <div class="b2"></div>
@@ -31,7 +32,6 @@
 
                         </div>
                     </button>
-                    
                 </div>
                 <ul>
                     <li class="menubtn" onclick="window.scrollTo(0, 0);">Home</li>
@@ -39,28 +39,40 @@
                     <li class="menubtn">Habilidades</li>
                     <li class="menubtn">Portifólio</li>
                     <li class="menubtn" onclick="document.getElementById('contatos').scrollIntoView();">Contato</li>
-                    <li>
-                        <button class="downcv">
-                            <a href="/files/resumeFelipeSantos.pdf" download="Felipe's resume">Currículo</a>
-                        </button>
-                    </li>
                 </ul>
             </div>
-            
-            
-           
-
         </div>
     </header>
     <main>
         <div class="lagchange">
             <i class="fa-solid fa-earth-americas" title="Change language"></i>
             <ul class="langs">
-                <li><a href="#/pt_br"> Português <img src="/imgs/br.png" alt=""> </a></li>
+                <li><a href="/index.html" onclick="switchLang('pt_br');"> Português <img src="/imgs/br.png" alt=""> </a></li>
                 <br>
-                <li><a href="#/en">English <img src="/imgs/us.png" alt=""></a></li>
+                <li><a href="/en.html" onclick="switchLang('en');">English <img src="/imgs/us.png" alt=""></a></li>
             </ul>
+        </div>
+        <div class="home">
+            <div class="pres">
+                <span>
+                    <p class="p1"></p>
+                    <span>
+                        <p class="p2"></p>
+                    </span>
+                    <p class="p3"></p>
+                </span>
+
+                <div class="botoes">
+                    <button id="contact">
+                        <a href="/files/resumeFelipeSantos.pdf" download="Felipe's resume">Currículo</a>
+                    </button>
+                    <button id="resume" class="downcv">
+                        <a href="#contatos">Contato</a>
+                    </button>
+                </div>
+            </div>
             
+           
         </div>
     </main>
     <footer>
