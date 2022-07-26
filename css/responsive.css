@@ -82,5 +82,12 @@
         top: 0rem;
         transform: rotate(-45deg);
         transition: 0.5s;
-    } 
+    }
+    .home {
+        display: flex;
+        height: 80vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
 }
