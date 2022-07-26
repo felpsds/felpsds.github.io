@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="/JS/index.js"></script>
+    <script src="/language.json"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <title>FelipeDS</title>
@@ -38,7 +39,7 @@
                     <li class="menubtn">Sobre</li>
                     <li class="menubtn">Habilidades</li>
                     <li class="menubtn">Portifólio</li>
-                    <li class="menubtn" onclick="document.getElementById('contatos').scrollIntoView();">Contato</li>
+                    <li class="menubtn"><a href="#contatos">Contato</a></li>
                 </ul>
             </div>
         </div>
@@ -47,9 +48,9 @@
         <div class="lagchange">
             <i class="fa-solid fa-earth-americas" title="Change language"></i>
             <ul class="langs">
-                <li><a href="/index.html" onclick="switchLang('pt_br');"> Português <img src="/imgs/br.png" alt=""> </a></li>
+                <li><a onclick="changeLang('pt_br');"> Português <img src="/imgs/br.png" alt=""> </a></li>
                 <br>
-                <li><a href="/en.html" onclick="switchLang('en');">English <img src="/imgs/us.png" alt=""></a></li>
+                <li><a onclick="changeLang('en');">English <img src="/imgs/us.png" alt=""></a></li>
             </ul>
         </div>
         <div class="home">
@@ -71,8 +72,9 @@
                     </button>
                 </div>
             </div>
+        </div>
+        <div class="about">
             
-           
         </div>
     </main>
     <footer>
