@@ -1,15 +1,37 @@
-async function animation(){
-    var frases = [
+async function animation(lang){
+    document.querySelector(".lagchange").style.display = "none";
+    
+    var frases_br = [
         "",
         "Oi, meu nome é",
         "Felipe dos Santos",
-        "Eu sou um desenvolvedor Front-End"
+        "Eu sou um desenvolvedor Front-End!"
+    ]
+    var frases_en = [
+        "",
+        "Hi, my name is",
+        "Felipe dos Santos",
+        "I'm Front-End Developer!"
     ]
     for(let j = 1; j < 4; j++){
         letras = '';
         local = document.querySelector(".p"+j);
-        frase = frases[j];
-        size = frases[j].length;
+        switch (lang){
+            case "pt_br":
+                frase = frases_br[j];
+                size = frases_br[j].length;
+            break;
+            case "en":
+                frase = frases_en[j];
+                size = frases_en[j].length;
+            break;
+            default:
+                frase = frases_br[j];
+                size = frases_br[j].length;
+            break;
+        }
+        
+        
         for(let i = 0; i < size; i++){
             second = Math.floor(Math.random() * 121.) + 60;
             await sleep(second);
@@ -20,6 +42,7 @@ async function animation(){
     await sleep(200);
     document.getElementById("contact").style.opacity = 1
     document.getElementById("resume").style.opacity = 1
+    document.querySelector(".lagchange").style.display = "flex";
 }
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -27,7 +50,6 @@ function sleep(ms) {
 
 function changeLang(lang){
     menu = document.querySelectorAll(".menubtn");
-
     switch (lang){
         case "pt_br":
             fetch("language.json")
@@ -37,7 +59,9 @@ function changeLang(lang){
                        toreplace = data.pt_br.header[i];
                         menu[i].innerHTML = toreplace;
                     }
+                    document.getElementById("contatos").innerHTML = data.pt_br.footer.title;
         })
+        animation("pt_br");
         break;
 
         case "en":
@@ -48,8 +72,10 @@ function changeLang(lang){
                     toreplace = data.en.header[i];
                     menu[i].innerHTML = toreplace;
                 }
+                document.getElementById("contatos").innerHTML = data.en.footer.title;
 
         })
+        animation("en");
         break;
     }
 }
