@@ -1,6 +1,11 @@
 async function animation(lang){
     document.querySelector(".lagchange").style.display = "none";
-    
+    document.getElementById("contact").style.opacity = 0
+    document.getElementById("resume").style.opacity = 0
+    for(let j = 1; j < 4; j++){
+        await sleep(1);
+        document.querySelector(".p"+j).innerHTML = " ";
+    }
     var frases_br = [
         "",
         "Oi, meu nome é",
