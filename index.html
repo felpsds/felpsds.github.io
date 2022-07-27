@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "cycpyoeoxe");
-    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Scripts -->
     <script src="/JS/index.js"></script>
     <script src="/language.json"></script>
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "cycpyoeoxe");
+    </script>
+    <!-- Title -->
     <title>FelipeDS</title>
 </head>
 <body onload="animation();">
@@ -42,11 +48,10 @@
                     </button>
                 </div>
                 <ul>
-                    <li class="menubtn" onclick="window.scrollTo(0, 0);">Home</li>
-                    <li class="menubtn">Sobre</li>
-                    <li class="menubtn">Habilidades</li>
-                    <li class="menubtn">Portifólio</li>
-                    <li class="menubtn"><a href="#contatos">Contato</a></li>
+                    <li class="menubtn" onclick="window.scrollTo(0, 0);"><a>Home</a></li>
+                    <li class="menubtn"><a href="#skills">Habilidades</a></li>
+                    <li class="menubtn"><a href="#portifolios">Projetos</a></li>
+                    <li class="menubtn"><a href="#contacts">Contatos</a></li>
                 </ul>
             </div>
         </div>
@@ -75,17 +80,37 @@
                         <a href="/files/resumeFelipeSantos.pdf" download="Felipe's resume">Currículo</a>
                     </button>
                     <button id="resume" class="downcv">
-                        <a href="#contatos">Contato</a>
+                        <a href="#contacts">Contato</a>
                     </button>
                 </div>
             </div>
         </div>
-        <div class="about">
+        
+        <div id="skills" class="skill">
+            <p>Eu to fazendo ainda, mas são várias!</p>
+        </div>
+        <p id="portifolios" class="titles">Projetos</p>
+        <div class="portifolio">
+            <div class="pb">
+                <div class="sg">
+                    <button onclick=" window.open('/sg/sg.html','_blank')">
+                        Meu Jogo
+                    </button>
+                </div>
+                <div class="flooder">
+                    
+                </div>
+                <div class="sc">
+                   
+                </div>
+                
+            </div>
             
         </div>
     </main>
+    
     <footer>
-        <p id="contatos">
+        <p id="contacts">
             Contatos:
         </p>
         <div class="icons">

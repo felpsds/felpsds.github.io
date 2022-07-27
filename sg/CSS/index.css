@@ -1,0 +1,98 @@
+html, body {
+    min-height: 100%;
+    margin: 0;
+}
+body{
+    background-color: #2f3136;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+.theme{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#themes{
+    padding: 20px;
+    margin-top: 10%;
+    max-width: 15%;
+    max-height: 15%;
+}
+.Light, .Night{
+    flex:1 1 0%;
+    margin: 0px 10px;
+}
+aside{
+    position:absolute;
+    top:0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    min-width: 100%;
+}
+#menuicon{
+    margin-left: 10px;
+    max-height: 55%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.menu-opener{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 92px;
+    cursor: pointer;
+}
+#menu-area{
+
+    width: 0px;
+    min-height: 100%;
+    background-color: rgb(32, 34, 37);
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all ease .5s;
+
+}
+#menu-area ul, #menu-area li{
+
+    padding: 20px;
+    list-style: none;
+}
+#menu-area li{
+    display: block;
+    padding: 10px;
+
+    cursor: pointer;
+}
+.menulista{
+    color: #ffffff;
+    padding-top: 5px !important;
+    margin: 0;
+}
+#menu-area li:hover{
+    color: #000000ef;
+}
+.menu-opened{
+    width: 200px !important; 
+}
+.content{
+    min-width: 75%;
+}
+#sec1, #sec2{
+    border-radius: 35px;
+    background-color: rgb(32, 34, 37);
+    min-height: 80vh;
+    min-width:80%;
+    margin: 10%;
+}
+#sec1{
+    display: grid;
+    place-items: center;
+}
+#sec2{
+    display: grid;
+    place-items: center;
+}

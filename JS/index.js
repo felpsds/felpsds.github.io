@@ -2,10 +2,7 @@ async function animation(lang){
     document.querySelector(".lagchange").style.display = "none";
     document.getElementById("contact").style.opacity = 0
     document.getElementById("resume").style.opacity = 0
-    for(let j = 1; j < 4; j++){
-        await sleep(1);
-        document.querySelector(".p"+j).innerHTML = " ";
-    }
+    
     var frases_br = [
         "",
         "Oi, meu nome é",
@@ -22,10 +19,6 @@ async function animation(lang){
         letras = '';
         local = document.querySelector(".p"+j);
         switch (lang){
-            case "pt_br":
-                frase = frases_br[j];
-                size = frases_br[j].length;
-            break;
             case "en":
                 frase = frases_en[j];
                 size = frases_en[j].length;
@@ -38,7 +31,7 @@ async function animation(lang){
         
         
         for(let i = 0; i < size; i++){
-            second = Math.floor(Math.random() * 121.) + 40;
+            second = Math.floor(Math.random() * 61) + 30;
             await sleep(second);
             letras = letras + frase[i];
             local.innerHTML = letras;
