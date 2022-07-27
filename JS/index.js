@@ -38,7 +38,7 @@ async function animation(lang){
         
         
         for(let i = 0; i < size; i++){
-            second = Math.floor(Math.random() * 121.) + 60;
+            second = Math.floor(Math.random() * 121.) + 40;
             await sleep(second);
             letras = letras + frase[i];
             local.innerHTML = letras;
