@@ -27,7 +27,15 @@
     <!-- Title -->
     <title>FelipeDS</title>
 </head>
-<body onload="animation();">
+
+<body onload="animation();checkCookie()">
+    <div class="cookiealert" id="lgpd_cookie">
+        <p> Para usar este site você concorda que ele utilize cookies, para estatísticas e melhor funcionamento! </p>
+        <button onclick="saveCookies(true);">
+            Concordar
+        </button>
+        
+    </div>
     <header>
         <div class="logo" style="cursor: pointer;">
             <b>
