@@ -24,7 +24,7 @@ body {
     width: 100px; 
 }
 #lgpd_cookie{
-    display: grid;
+    display: none;
     top: 90%;
     box-shadow: rgba(0, 0, 0, 0.30) 13px -20px 50px -10px;
     background-color: #ffffff;

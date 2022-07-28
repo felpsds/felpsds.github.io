@@ -279,7 +279,7 @@ footer p {
     transition: 0.75s;
 }
 .sg:hover,.sc:hover,.flooder:hover{
-    transform: scale(1.15);
+    transform: scale(1.10);
     transition: 0.55s;
 }
 .exp{
