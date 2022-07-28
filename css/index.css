@@ -8,7 +8,6 @@ body{
 }
 
 .cookiealert{
-    width: 95vw;
     bottom: 0;
     position: fixed;
     flex-direction: column;
@@ -23,7 +22,7 @@ body{
     background-color: #302f2f8e;
     z-index: 101;
     border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+    border-top-right-radius: 15px;
 }
 .cookiealert p{
     position: relative;
