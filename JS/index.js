@@ -5,13 +5,13 @@ async function animation(lang){
     
     var frases_br = [
         "",
-        "Oi, meu nome é",
+        "Oi, meu nome é:",
         "Felipe dos Santos",
         "Eu sou um desenvolvedor Front-End!"
     ]
     var frases_en = [
         "",
-        "Hi, my name is",
+        "Hi, my name is:",
         "Felipe dos Santos",
         "I'm Front-End Developer!"
     ]
@@ -45,7 +45,6 @@ async function animation(lang){
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-
 function changeLang(lang){
     menu = document.querySelectorAll(".menubtn");
     switch (lang){
@@ -77,7 +76,6 @@ function changeLang(lang){
         break;
     }
 }
-
 function saveCookies(option){
     document.getElementById("lgpd_cookie").style.display = "none";
     if(option == true){
@@ -92,7 +90,6 @@ function checkCookie(){
         document.getElementById("lgpd_cookie").style.display = "flex";
     }
 }
-
 function getCookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
