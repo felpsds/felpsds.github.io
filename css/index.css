@@ -407,7 +407,7 @@ footer p {
     font-size: 0.75rem;
     border-radius: 15px;
 }
-.skill p{
+.skill .skillarea p{
     margin: 0;
     padding: 0;
 }
