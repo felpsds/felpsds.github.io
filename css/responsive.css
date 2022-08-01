@@ -184,7 +184,7 @@
     .card_a img ,.card_b img{
         min-width: 25%;
         width: 25%;
-        transform: scale(0.6);
+        transform: scale(0.85);
         filter: invert(100%);
     }
     .card_a:hover,.card_b:hover{
