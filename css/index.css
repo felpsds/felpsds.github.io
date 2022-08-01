@@ -142,6 +142,16 @@ a{
     opacity: 1;
     cursor: pointer;
 }
+.lagchange ul li a{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.lagchange ul li a img{
+    margin-left: 5%;
+    width: 25%;
+    height: 25%;
+}
 .langs{
     margin: 0;
     padding: 0;
@@ -349,7 +359,6 @@ footer p {
     justify-content: center;
     align-items: center;
 }
-
 .skillarea{
     flex-direction: column;
 }
@@ -397,7 +406,6 @@ footer p {
     justify-content: space-around;
     align-items: center;
 }
-
 .progress {
     background-color: #e4e7e8;
     width: 40%;
