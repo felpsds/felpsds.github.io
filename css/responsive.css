@@ -188,7 +188,7 @@
         filter: invert(100%);
     }
     .card_a:hover,.card_b:hover{
-        transform: scale(1.1);
+        transform: scale(1);
         transition: 0.75s;
     }
     .a_bottom{
