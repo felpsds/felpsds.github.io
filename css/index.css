@@ -339,6 +339,10 @@ footer p {
     text-align: center;
     padding: 0.5rem;
 }
+.exp p.titles{
+    padding: 0;
+    margin: 0;
+}
 .titleresp{
     display: flex;
     flex-direction: column;
