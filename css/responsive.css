@@ -151,4 +151,70 @@
         transform: scale(1);
         transition: 0s;
     }
+
+
+    .a_top{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .card_a,.card_b{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom :1%;
+        width: 60vw;
+        height: 22vh;
+        background-color: #151515;
+        border-radius: 15px;
+        transform: scale(1);
+        transition: 0.75s;
+        
+    }
+    .img{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .card_a img ,.card_b img{
+        min-width: 25%;
+        width: 25%;
+        transform: scale(0.6);
+        filter: invert(100%);
+    }
+    .card_a:hover,.card_b:hover{
+        transform: scale(1.1);
+        transition: 0.75s;
+    }
+    .a_bottom{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .progress {
+        background-color: #e4e7e8;
+        width: 40%;
+        border-radius: 15px;
+    }
+    .bar{
+        background-color: #0496FF;
+        color: white;
+        padding: 1.25%;
+        text-align: right;
+        font-size: 0.75rem;
+        border-radius: 15px;
+    }
+    .skill p{
+        margin: 0;
+        padding: 0;
+    }
 }
