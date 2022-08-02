@@ -28,7 +28,7 @@ body{
 /* Lang */
 .lagchange{
     display: flex;
-    border: 1x solid black;
+    border: 2px solid black;
     justify-content: center;
     align-items: center;
     z-index: 101;
@@ -47,7 +47,7 @@ body{
 .active{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100px;
     height: 80px;
     padding: 0 0.5%;
@@ -98,5 +98,9 @@ body{
     padding: 1%;
 }
 @media only screen and (max-width: 708px) {
-    .logo {width: 50%;}
+    body{
+        max-height: 100%;
+    }
+    .logo {width: 60%;}
+    .lagchange a{font-size: 0.85rem;}
 }

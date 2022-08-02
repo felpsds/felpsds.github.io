@@ -53,4 +53,8 @@ button img:hover{
 .return:hover{
     transform: rotate(-180deg);
 }
-
+@media only screen and (max-width: 708px) {
+    button img{
+        width: 35%;
+    }
+}
