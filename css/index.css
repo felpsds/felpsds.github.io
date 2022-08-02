@@ -144,6 +144,9 @@ a{
     border: 0;
     cursor: pointer;
 }
+.fa-earth-americas{
+    color: #ffffff;
+}
 .show{
     opacity: 1 !important; 
     display: flex !important;
