@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/startmenu.css">
+        <script src=" "></script>
+        <title>Simple Games</title>
+        <link rel="icon" type="image/png" href="icons/favicon.png"/>
+        <script src="JS/menu.js"></script>
+        
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!-- Google font -->
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script type="text/javascript">
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "cycpyoeoxe");
+        </script>
+
+
+    </head>
+    <body onload="checkCookie(); getLang(lang)">
+        <div class="menu">
+            <button>
+                <img class="logo" src="/sg/Img/Logo.png" alt="" onclick="alert('Créditos: \n• Artes visuais: @viniiid\n• Criacao e dev.: @felpsds ')">
+            </button>
+            <button onclick="window.location.replace('HTML/games.html')">
+                <img class="btn" src="/sg/Img/Jogar.svg" alt="">
+            </button>
+            <button onclick="window.close()">
+                <img class="btn" src="/sg/Img/SAIR.svg" alt="">
+            </button>
+        </div>
+        <div class="lagchange" >
+            <button onclick="langchange();"><i class="fa-solid fa-earth-americas"></i></button>
+            <a onclick="langchange();getLang('pt_br');">Português<img src="/imgs/br.png" alt=""> </a>
+            <a onclick="langchange();getLang('en');">English<img src="/imgs/us.png" alt=""></a>
+            </ul>
+        </div>
+        <div class="lgpd_alert">
+            <p>Esse site usa cookies <i class="fa-solid fa-cookie"></i></p>
+            <p>Nós armazenamos dados temporariamente para melhorar a sua experiência de navegação e recomendar conteúdo de seu interesse. Ao utilizar nossos serviços, você concorda com tal monitoramento.</p>
+            <button onclick="saveCookies();">
+                Entendido
+            </button>
+        </div>
+    </body>
+</html>

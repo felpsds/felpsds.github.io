@@ -37,7 +37,7 @@
         
     </div>
     <header>
-        <div class="logo" style="cursor: pointer;">
+        <div class="logo" style="cursor: pointer;" onclick="window.location.replace('/index.html')">
             <b>
             &lt;/FelipeDS&gt;
             </b>
@@ -65,12 +65,10 @@
         </div>
     </header>
     <main>
-        <div class="lagchange">
-            <i class="fa-solid fa-earth-americas" title="Change language"></i>
-            <ul class="langs">
-                <li><a onclick="changeLang('pt_br');">Português<img src="/imgs/br.png" alt=""> </a></li>
-                <br>
-                <li><a onclick="changeLang('en');">English<img src="/imgs/us.png" alt=""></a></li>
+        <div class="lagchange" >
+            <button onclick="langchange();"><i class="fa-solid fa-earth-americas"></i></button>
+            <a onclick="langchange();changeLang('pt_br');">Português<img src="/imgs/br.png" alt=""> </a>
+            <a onclick="langchange();changeLang('en');">English<img src="/imgs/us.png" alt=""></a>
             </ul>
         </div>
         <div class="home">
