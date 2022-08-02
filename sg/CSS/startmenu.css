@@ -28,7 +28,7 @@ body{
 /* Lang */
 .lagchange{
     display: flex;
-    border: 2px solid black;
+    border: 1x solid black;
     justify-content: center;
     align-items: center;
     z-index: 101;
@@ -43,7 +43,6 @@ body{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     transition: 0.55s;
-    color: #FFFFFF;
 }
 .active{
     display: flex;
@@ -84,9 +83,6 @@ body{
 .lagchange a img{
     margin-left: 5%;
     width: 20%;
-}
-.fa-earth-americas{
-    color: #ffffff;
 }
 /*LGPD*/
 .lgpd_alert{
