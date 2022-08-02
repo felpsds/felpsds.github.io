@@ -43,6 +43,7 @@ body{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     transition: 0.55s;
+    color: #FFFFFF;
 }
 .active{
     display: flex;
@@ -83,6 +84,9 @@ body{
 .lagchange a img{
     margin-left: 5%;
     width: 20%;
+}
+.fa-earth-americas{
+    color: #ffffff;
 }
 /*LGPD*/
 .lgpd_alert{
