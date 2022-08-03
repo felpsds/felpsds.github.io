@@ -32,9 +32,12 @@ p{
     background-color: transparent;
     border: 0;
     padding: 0;
+    
 }
 button img{
     width: 20%;
+    cursor: pointer;
+    transition: 0.55s;
 }
 button img:hover{
     transform: scale(1.1);
