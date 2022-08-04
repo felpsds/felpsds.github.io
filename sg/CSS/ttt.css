@@ -1,8 +1,6 @@
 *{
-    font-family: 'Merriweather Sans', sans-serif;
-    background-color: rgb(202, 228, 241);
+    font-family: 'Merriweather Sans', sans-serif;   
 }
-
 body{
     display: flex;
     width: 100vw;
@@ -11,6 +9,7 @@ body{
     margin: 0;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(202, 228, 241);
 }
 p{
     font-size: 1.35rem;
@@ -100,4 +99,41 @@ button{
 }
 .return:hover{
     transform: rotate(-180deg);
+}
+#gameOver{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0, 0.8);
+    color: white;
+    font-size: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+#restart{
+    margin: 0;
+    border: none;
+    margin: 8%;
+    border-radius: 30px;
+    margin-top: 10px;
+    font-weight: bolder;
+    transition: 0.55s;
+}
+.over_space{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40vw;
+    height: 35vh;
+}
+#restart:hover{
+    transform: scale(1.1);
+    transition: 0.55s;
+}
+#draw,#win{
+    display: none;
 }
