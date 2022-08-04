@@ -89,13 +89,13 @@ button{
 }
 .return{
     display: flex;
-    position: fixed;
+    position:absolute;
     top: 0%;
-    right: 0%;
+    right: 0;
     width: 2%;
-    margin: 3px;
+    margin: 0.75%;
     transition: transform .7s ease-in-out;
-    max-width: 20%;
+    
 }
 .return:hover{
     transform: rotate(-180deg);

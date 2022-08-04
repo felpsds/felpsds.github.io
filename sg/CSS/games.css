@@ -45,13 +45,13 @@ button img:hover{
 }
 .return{
     display: flex;
-    position: fixed;
-    top: 0.75%;
-    right: 0.5%;
-    margin: 2px;
+    position:absolute;
+    top: 0%;
+    right: 0;
+    width: 2%;
+    margin: 0.75%;
     transition: transform .7s ease-in-out;
-    max-width: 3%;
-    max-height: 3%;
+    
 }
 .return:hover{
     transform: rotate(-180deg);

@@ -1,31 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
-
 *{
     font-family: 'Merriweather Sans', sans-serif;
 }
 h1{
     display: block;
+    margin: 2% 0;
     text-align: center;
     color: #ff780c;
     font-family: 'Merriweather Sans', sans-serif;
-    font-family: 'berlin-sans-fb-demi-bold', sans-serif;
 }
 body{
-    background-color:rgb(202, 228, 241);    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color:rgb(202, 228, 241);
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 .sprite{
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    max-height: 100%;
+    display: flex;
+    width: 30%;
 }
+
 .return{
-    display: block;
+    display: flex;
     position:absolute;
     top: 0%;
-    left: 95%;
-    margin: 2px;
+    right: 0;
+    width: 2%;
+    margin: 0.75%;
     transition: transform .7s ease-in-out;
     
 }
@@ -33,7 +38,7 @@ body{
     transform: rotate(-180deg);
 }
 #container{
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -49,38 +54,10 @@ body{
     background: #fff;
     font-size: 1.05rem;
     cursor: pointer;
-    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    vertical-align: top;
     padding: 0;
 }
-.keyboard__key:active {
-    background: #fff;
-}
-.keyboard__key--wide {
-    width: 12%;
-}
-.keyboard__key--extra-wide {
-    width: 36%;
-    max-width: 500px;
-}
-.keyboard__key--activatable::after {
-    content: '';
-    top: 10px;
-    right: 10px;
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 50%;
-}
-.keyboard__key--active::after {
-    background: #fff;
-}
-.keyboard__key--dark {
-    background: #fff;
-}
+
 li{
     list-style: none;
     display: inline;
@@ -102,13 +79,12 @@ ul{
     flex-direction: column;
     top: 0;
 }
-#draw,#win, #lose, #resp{
+#win, #lose, #resp{
     display: none;
 }
 #resp{
     font-size: 15px;
 }
-
 #restart{
     margin: 0;
     box-sizing: border-box;
@@ -120,97 +96,44 @@ ul{
     margin-top: 10px;
     font-weight: bolder;
 }
-
-@media only screen and (max-width: 1920px) {
-    .sprite{
-        display: block;
-        margin: auto;
-        padding-left: 3%;
-        max-width: 18%;
-        max-height: 18%;
-    }
-    .return{
-        display: block;
-        position:absolute;
-        top: 0%;
-        left: 97%;
-        margin: auto;
-        margin-top: 8px;
-        transition: transform .7s ease-in-out;
-        max-height: 4%;
-    }
-    .return:hover{
-        transform: rotate(-180deg);
-    }
-}
-
 @media only screen and (max-width: 830px) {
     .sprite{
-        display: block;
-        margin: auto;
-        padding-left: 9%;
-        max-width: 50%;
-        max-height: 50%;
+        display: flex;
+        width: 40%;
     }
     .return{
-        display: block;
-        position:absolute;
+        display: flex;
+        position: absolute;
         top: 0%;
-        left: 96%;
-        margin: 3px;
+        right: 0;
+        width: 5%;
+        margin: 0.75%;
         transition: transform .7s ease-in-out;
-        max-width: 20%;
+        
     }
     .return:hover{
         transform: rotate(-180deg);
-    }
-    form.lang{
-        display: block;
-        position:absolute;
-        top: 0%;
-        right: 80%;
-        margin: 2px;
     }
     
 }
 
 @media only screen and (max-width: 500px) {
     .sprite{
-        display: block;
-        margin: auto;
-        padding-left: 15%;
-        max-width: 59%;
-        max-height: 59%;
+        display: flex;
+        width: 70%;
     }
     .return{
-        display: block;
-        position:absolute;
-        top: 0%;;
-        left: 90%;
-        margin: 2px;
+        display: flex;
+        position: absolute;
+        top: 0%;
+        right: 0;
+        width: 7%;
+        margin: 0.75%;
         transition: transform .7s ease-in-out;
-        max-width: 7%;
+        
     }
     .return:hover{
-        transform: rotate(-180deg);
-    }
-    .keyboard__key {
-        height: 37px;
-        width: 37px;
-        margin: 1px;
-        border-radius: 6px;
-        background: #fff;
-        font-size: 1.05rem;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-    }
-    form.lang{
-        display: block;
-        position:absolute;
-        top: 0%;
-        right: 70%;
-        margin: 2px;
+        transform: rotate(0);
     }
     #win, #lose{
         font-size: 45px;
