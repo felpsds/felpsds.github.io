@@ -79,10 +79,8 @@ function changeLang(lang){
 function saveCookies(option){
     document.getElementById("lgpd_cookie").style.display = "none";
     if(option == true){
-        var now = new Date();
-        var time = now.getTime();
-        var expireTime = time + 1000*36000;
-        document.cookie = "cookieAlert=true";expires='+now.toUTCString()+'; ";path=/";
+        var expires = (new Date(Date.now()+ 86400*1000)).toUTCString();
+        document.cookie = "cookieAlert=true; expires=" + expires + ";path=/;"
     } else {
         console.log("Not Confirmed!")
     }
