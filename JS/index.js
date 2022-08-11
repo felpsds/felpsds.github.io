@@ -82,7 +82,7 @@ function saveCookies(option){
         var now = new Date();
         var time = now.getTime();
         var expireTime = time + 1000*36000;
-        document.cookie = "cookieAlert=true"; +;expires='+now.toUTCString()+'; ";path=/";
+        document.cookie = "cookieAlert=true";expires='+now.toUTCString()+'; ";path=/";
     } else {
         console.log("Not Confirmed!")
     }
