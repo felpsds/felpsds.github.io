@@ -79,7 +79,7 @@ function changeLang(lang){
 function saveCookies(option){
     document.getElementById("lgpd_cookie").style.display = "none";
     if(option == true){
-        var expires = (new Date(Date.now()+ 86400*1000)).toUTCString();
+        var expires = (new Date(Date.now()+ 86400*1000)*365).toUTCString();
         document.cookie = "cookieAlert=true; expires=" + expires + ";path=/;"
     } else {
         console.log("Not Confirmed!")
