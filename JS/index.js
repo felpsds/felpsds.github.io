@@ -7,13 +7,13 @@ async function animation(lang){
         "",
         "Oi, meu nome é:",
         "Felipe dos Santos",
-        "Eu sou um desenvolvedor Front-End!"
+        "Eu sou um desenvolvedor FullStack!"
     ]
     var frases_en = [
         "",
         "Hi, my name is:",
         "Felipe dos Santos",
-        "I'm Front-End Developer!"
+        "I'm FullStack Developer!"
     ]
     for(let j = 1; j < 4; j++){
         letras = '';
