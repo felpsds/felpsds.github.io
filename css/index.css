@@ -422,14 +422,15 @@ footer p {
 .blink {
   animation: blink-animation 1s steps(5, start) infinite;
   -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  border-right: 2px solid #027BCE;
 }
 @keyframes blink-animation {
   to {
-    visibility: hidden;
+    border-color: transparent;
   }
 }
 @-webkit-keyframes blink-animation {
   to {
-    visibility: hidden;
+    border-color: #027BCE;
   }
 }
