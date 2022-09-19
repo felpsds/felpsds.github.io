@@ -106,23 +106,6 @@ function getCookie(cname) {
     }
     return "";
 }
-async function logo(){
-    cont = true;
-    logo = document.querySelector(".logo b").innerText;
-    while(true){
-        await sleep(750);
-        
-        console.log(logo)
-        if(cont == true){
-           logop = logo + " |"
-           document.querySelector(".logo b").innerText = logop;
-           cont = false
-        }else{
-            document.querySelector(".logo b").innerText = logo;
-            cont = true;
-        }
-    }
-}
 activate = false
 function langchange(){
     btn = document.querySelector(".lagchange");
